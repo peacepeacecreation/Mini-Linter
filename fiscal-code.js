@@ -73,9 +73,9 @@ function getHTML(name, code) {
 function createContainer() {
 	return Object.values(arguments).reduce(
     (html, item) => {
-        html += getHTML(item.name, item.code);
-
-        return html;
+    	html += getHTML(item.name, item.code);
+	
+      return html;
     },
     '<div class="container">'
   ) + '</div>';
